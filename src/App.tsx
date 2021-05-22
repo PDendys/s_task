@@ -1,5 +1,7 @@
 import React from 'react';
 
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 const App: React.FC = () => {
     const [counter, setCounter] = React.useState<string>('');
 
@@ -8,7 +10,7 @@ const App: React.FC = () => {
     }, [counter]);
 
     return (
-        <div>
+        <div className="container">
             Hello World!
         </div>
     )
