@@ -1,30 +1,43 @@
-# Schibsted frontend task app
+# News viewing app
 
-This is a very basic npm project with default webpack setup.
+This application main goal is to view basic list of news. Data can be filltred by source and sorted by publication date.
+Application is bootstraped using webpack.  
 
-You should use this project as a base for your solution.
-Feel free to modify/extend this with whatever you need.
+### Commands:
+Clone repository:
+```
+git clone
+```
+Install dependencies:
+```
+npm install
+```
+Run frontend application in dev mode:
+```
+npm run dev
+```
+Run dev backend server:
+```
+node server.js
+```
+To build production version:
+```
+npm run build
+```
 
-In case you need some assistance take a look at official webpack docs:
- - [Guides](https://webpack.js.org/guides/) 
- - [Concepts](https://webpack.js.org/concepts/)
-
-Eventually this application will request live data from a real API.
-
-You can find the full description of your assignment in [ASSIGNMENT.md](ASSIGNMENT.md)
-
-## API Documentation
-Api server can be found in `server.js` file. You should not modify this file, only use it.
-
-To run the server do:
-> `$ node server.js`
-
-Server will start listening on port `6010`.
-
-The server has 2 endpoints:
-
-`/articles/sports` - returns a list of articles from `sport` category
-
-`/articles/fashion` - returns a list of articles from `fashion` category
-
-Be aware of backend errors!
+ ### Tech stack:
+ - React
+ - Styled Components
+ - Bootstrap 5
+ - Typescript
+ - Webpack
+ 
+ ### Improvments
+ List of potential improvments:
+ 
+ - Using one route for fetching articles with filtering based on query parameters.
+ - Implementation library like React Query to auto dealing with 'loading', 'errors' etc.
+ - Implementation of server side filltering also based on query parameters.
+ - Better handling different date format to avoid unnecessary operations (maby we should use some time manipulation library)
+ - Test implementation. Unit or e2e tests are possible to consider.
+ - Implemenation of env variable to 
