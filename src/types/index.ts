@@ -1,7 +1,11 @@
-export enum ArticleCategory {
+export const enum ArticleCategory {
   FASHION = 'fashion',
-  SPORT = 'sport',
+  SPORTS = 'sports',
 }
+
+export const enum OneTwoThreeEnum { One = 'one', Two = 'two', Three = 'three' }
+
+export type SortMode = 'ASC' | 'DESC';
 
 // Models
 export interface IArticle {

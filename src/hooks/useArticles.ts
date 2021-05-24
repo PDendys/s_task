@@ -2,7 +2,7 @@ import React from 'react';
 
 import { ArticlesDataProviderContext } from '../providers/Articles.provider';
 
-const useArticlesData = () => {
+const useArticles = () => {
   const context = React.useContext(ArticlesDataProviderContext);
 
   if (context === undefined) {
@@ -12,4 +12,4 @@ const useArticlesData = () => {
   return context;
 };
 
-export default useArticlesData;
+export default useArticles;
