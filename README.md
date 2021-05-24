@@ -40,4 +40,4 @@ npm run build
  - Implementation of server side filltering also based on query parameters.
  - Better handling different date format to avoid unnecessary operations (maby we should use some time manipulation library)
  - Test implementation. Unit or e2e tests are possible to consider.
- - Implemenation of env variable to 
+ - Implemenation of production env variable. 
