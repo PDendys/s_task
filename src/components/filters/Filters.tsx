@@ -1,18 +1,35 @@
 import React from 'react';
 
-// styles
-import FiltersStyled from './styles';
+// hooks
+import useArticles from '../../hooks/useArticles';
 
-const Filters: React.FC = () => (
-  <FiltersStyled>
-    <p className="label">Sort by date</p>
-    <div className="sorter-box">
-      {/* eslint-disable-next-line jsx-a11y/control-has-associated-label */}
-      <button className="btn -up" type="button" />
-      {/* eslint-disable-next-line jsx-a11y/control-has-associated-label */}
-      <button className="btn -down" type="button" />
-    </div>
-  </FiltersStyled>
-);
+// types
+import { SortMode } from '../../types';
+
+// styles
+import { FiltersStyled, FiltersButtonStyled } from './styles';
+
+const Filters: React.FC = () => {
+  const { sortMode, setSortMode } = useArticles();
+  return (
+    <FiltersStyled>
+      <p className="label mb-0 me-2 me-lg-3">Sort by date</p>
+      <div className="sorter-box">
+        <FiltersButtonStyled
+          direction="up"
+          title={SortMode.ASC}
+          isActive={sortMode === SortMode.ASC}
+          onClick={() => setSortMode(SortMode.ASC)}
+        />
+        <FiltersButtonStyled
+          direction="down"
+          title={SortMode.DESC}
+          isActive={sortMode === SortMode.DESC}
+          onClick={() => setSortMode(SortMode.DESC)}
+        />
+      </div>
+    </FiltersStyled>
+  );
+};
 
 export default Filters;

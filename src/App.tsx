@@ -14,13 +14,13 @@ const App: React.FC = () => (
   <ArticlesDataProvider>
     <div className="container">
       <div className="row">
-        <div className="col-6 col-md-12 order-2 order-md-1">
+        <div className="col-5 col-lg-12 order-2 order-lg-1">
           <Filters />
         </div>
-        <div className="col-6 col-md-3 order-1 order-md-2">
+        <div className="col-7 col-lg-3 order-1 order-lg-2">
           <SourcesMenu />
         </div>
-        <div className="col-md-9 order-3">
+        <div className="col-lg-9 order-3 mt-3 mt-lg-0">
           <ArticleList />
         </div>
       </div>
