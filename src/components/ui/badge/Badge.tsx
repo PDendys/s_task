@@ -8,8 +8,8 @@ type Props = {
     readonly bcgColor: string;
 }
 
-const CategoryLabel: React.FC<Props> = ({ label, bcgColor }: Props) => (
+const Badge: React.FC<Props> = ({ label, bcgColor }: Props) => (
   <CategoryLabelStyled bcgColor={bcgColor}>{label}</CategoryLabelStyled>
 );
 
-export default CategoryLabel;
+export default Badge;

@@ -1,7 +1,7 @@
 import React from 'react';
 
 // styles
-import { ArticleListMessageStyled } from './styles';
+import MessageBoxStyled from './styles';
 
 type Props = {
     readonly message: string;
@@ -9,8 +9,8 @@ type Props = {
     readonly mode?: 'error';
 }
 
-const ArticleListMessage: React.FC<Props> = ({ message, mode }: Props) => (
-  <ArticleListMessageStyled mode={mode}>{ message }</ArticleListMessageStyled>
+const MessageBox: React.FC<Props> = ({ message, mode }: Props) => (
+  <MessageBoxStyled mode={mode}>{ message }</MessageBoxStyled>
 );
 
-export default ArticleListMessage;
+export default MessageBox;

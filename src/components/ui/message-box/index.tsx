@@ -1,3 +1,3 @@
-import ArticleListMessage from './ArticleListMessage';
+import MessageBox from './MessageBox';
 
-export default ArticleListMessage;
+export default MessageBox;

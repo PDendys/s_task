@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const CategoryLabelStyled = styled.span<{ bcgColor: string }>`
+const BadgeStyled = styled.span<{ bcgColor: string }>`
     padding: 3px 8px;
     color: #000;
     font-weight: 600;
@@ -12,4 +12,4 @@ const CategoryLabelStyled = styled.span<{ bcgColor: string }>`
     top: 0;
 `;
 
-export default CategoryLabelStyled;
+export default BadgeStyled;

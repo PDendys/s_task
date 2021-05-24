@@ -1,3 +1,3 @@
-import CategoryLabel from './CategoryLabel';
+import Badge from './Badge';
 
-export default CategoryLabel;
+export default Badge;
