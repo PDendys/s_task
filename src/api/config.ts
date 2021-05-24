@@ -1,4 +1,4 @@
-const apiHost = 'http://localhost:6010/';
+const apiHost = process.env.API_HOST;
 
 const routes = {
   getArticles: 'articles/',
